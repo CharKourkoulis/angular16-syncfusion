@@ -5,7 +5,9 @@ import {
   SortService,
   FilterService,
   GroupService,
-  VirtualScrollService
+  VirtualScrollService,
+  ToolbarService,
+  EditService
 } from '@syncfusion/ej2-angular-grids';
 import {
   DateTimeService,
@@ -18,7 +20,7 @@ export const routes: Routes = [
   { path: '', component: DatagridComponent },
   {
     path: 'datagrid',
-    providers: [PageService, SortService, FilterService, GroupService, VirtualScrollService ],
+    providers: [PageService, SortService, FilterService, GroupService, VirtualScrollService, ToolbarService, EditService ],
     component: DatagridComponent,
     pathMatch: 'full',
   },
