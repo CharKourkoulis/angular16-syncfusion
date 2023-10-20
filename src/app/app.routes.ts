@@ -17,7 +17,9 @@ import {
 } from '@syncfusion/ej2-angular-charts';
 
 export const routes: Routes = [
-  { path: '', component: DatagridComponent },
+  { path: '',
+  providers: [PageService, SortService, FilterService, GroupService, VirtualScrollService, ToolbarService, EditService ],
+  component: DatagridComponent },
   {
     path: 'datagrid',
     providers: [PageService, SortService, FilterService, GroupService, VirtualScrollService, ToolbarService, EditService ],
